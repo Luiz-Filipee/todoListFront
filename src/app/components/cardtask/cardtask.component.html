@@ -1,0 +1,12 @@
+<div class="card">
+    <div class="info-text">
+        <h2>{{ task.id }}</h2>
+        <h3>{{ task.name }}</h3>
+    </div>
+    <span>
+        <p>{{ task.value }}</p>
+        <button class="btn-remove" (click)="removeTask()">
+            <i class="fas fa-trash-alt"></i>
+        </button>
+    </span>
+</div>

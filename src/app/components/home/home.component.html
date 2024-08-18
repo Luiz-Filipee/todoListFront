@@ -1,0 +1,18 @@
+<div class="info">
+    <h1 class="title">TodoList</h1>
+    <p class="info">Bem-vindo a lista de compras. Aqui você pode criar<br>
+        uma lista de itens para realizar sua compra de forma mais rápida e organizada.
+    </p>
+    <div class="form-task">
+        <label for="nameTask">Name: </label>
+        <input type="text" name="nameTask" required [(ngModel)]="nameTask">
+        <label for="valueTask">Value: </label>
+        <input type="number" name="valueTask" required [(ngModel)]="valueTask">
+        <button class="btn-add" (click)="createTask()"> <i class="fas fa-plus"></i></button>
+    </div>
+
+    <div *ngFor="let task of tasks">
+        <app-cardtask [task]="task" (remove)="removeTask(task.id)"></app-cardtask>
+    </div>
+</div>
+<app-footer></app-footer>

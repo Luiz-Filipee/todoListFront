@@ -1,0 +1,46 @@
+.info-text{
+    display: flex;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 500px;
+    padding: 15px;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid gray;
+}
+
+.visible{
+    display: none;
+}
+
+span{
+    display: flex;
+    gap: 10px;
+}
+
+.btn-remove{
+    border: none;
+    border-radius: 90%;
+    padding: 20px 20px;
+    cursor: pointer;
+    background-color: red;
+}
+
+.btn-remove:hover{
+    background-color: rgb(235, 127, 127);
+}
+
+i{
+    color: white;
+}

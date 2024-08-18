@@ -1,0 +1,52 @@
+.info{
+    align-items: center;
+    text-align: center;
+}
+
+.title{
+    color: green;
+    font-size: 40px;
+}
+
+.info{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    font-weight: 550;
+}
+
+
+.form-task{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.form-task input{
+    border-radius: 8px;
+    border: 1px solid green;
+    padding: 8px;
+}
+
+.form-task label{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: 550;
+}
+
+.btn-add{
+    border: none;
+    border-radius: 90%;
+    padding: 15px 20px;
+    cursor: pointer;
+    background-color: green;
+}
+
+.btn-add:hover{
+    background-color: rgb(103, 235, 103);
+}
+
+i{
+    color: white;
+}
