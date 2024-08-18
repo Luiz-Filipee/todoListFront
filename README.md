@@ -1,27 +1,93 @@
-# TodoList
+# TodoListApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.0.
+TodoListApp é uma aplicação web desenvolvida com Angular para consumir dados da API **ApiTodoList**. Esta aplicação permite que você interaja com sua lista de tarefas de itens de compras de forma intuitiva e visual, facilitando a criação, visualização, atualização e exclusão de tarefas.
 
-## Development server
+## Funcionalidades
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Criar Tarefa**: Adicione novas tarefas à sua lista de compras.
+- **Listar Tarefas**: Visualize todas as tarefas disponíveis.
+- **Atualizar Tarefa**: Edite detalhes de uma tarefa existente.
+- **Excluir Tarefa**: Remova tarefas da lista.
 
-## Code scaffolding
+## Tecnologias Utilizadas
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Angular**: Framework para desenvolvimento de aplicações web.
+- **RxJS**: Biblioteca para programação reativa.
+- **Bootstrap**: Framework CSS para estilização.
+- **API**: Consome a API RESTful `ApiTodoList` desenvolvida em Java com Spring Boot.
 
-## Build
+## Requisitos
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Node.js (versão 14 ou superior)
+- Angular CLI (versão 15 ou superior)
 
-## Running unit tests
+## Instalação
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. **Clone este repositório:**
 
-## Running end-to-end tests
+    ```bash
+    git clone https://github.com/seuusuario/todolistapp.git
+    ```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+2. **Navegue para o diretório do projeto:**
 
-## Further help
+    ```bash
+    cd todolistapp
+    ```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+3. **Instale as dependências:**
+
+    ```bash
+    npm install
+    ```
+
+4. **Configure o endpoint da API:**
+
+    Atualize o arquivo `src/environments/environment.ts` com a URL da sua API `ApiTodoList`:
+
+    ```typescript
+    export const environment = {
+      production: false,
+      apiUrl: 'http://localhost:8080' // Substitua pelo URL da sua API
+    };
+    ```
+
+5. **Inicie a aplicação:**
+
+    ```bash
+    ng serve
+    ```
+
+6. **Acesse a aplicação:**
+
+    Abra o navegador e vá para `http://localhost:4200`.
+
+## Endpoints da API Consumidos
+
+- **POST /tasks**
+  - Adiciona uma nova tarefa.
+- **GET /tasks**
+  - Obtém uma lista de todas as tarefas.
+- **GET /tasks/{id}**
+  - Obtém uma tarefa específica.
+- **PUT /tasks/{id}**
+  - Atualiza uma tarefa existente.
+- **DELETE /tasks/{id}**
+  - Remove uma tarefa da lista.
+
+## Contribuindo
+
+1. Faça um fork deste repositório.
+2. Crie uma branch para sua modificação: `git checkout -b minha-modificacao`.
+3. Faça commit das suas alterações: `git commit -am 'Adiciona nova funcionalidade'`.
+4. Envie para o repositório remoto: `git push origin minha-modificacao`.
+5. Abra um Pull Request.
+
+## Licença
+
+Este projeto está licenciado sob a [MIT License](LICENSE).
+
+## Contato
+
+Se você tiver alguma dúvida, entre em contato com [seuemail@example.com](mailto:seuemail@example.com).
+
