@@ -89,5 +89,5 @@ Este projeto está licenciado sob a [MIT License](LICENSE).
 
 ## Contato
 
-Se você tiver alguma dúvida, entre em contato com [seuemail@example.com](mailto:seuemail@example.com).
+Se você tiver alguma dúvida, entre em contato com [seuemail@example.com](mailto:luizkato8@example.com).
 
